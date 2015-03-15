@@ -1,17 +1,17 @@
 /*
- * MesinEkspresi.cpp
+ * EkspresiRepository.cpp
  *
  *  Created on: Mar 15, 2015
  *      Author: Aurelia
  */
 
-#include "MesinEkspresi.h"
+#include "EkspresiRepository.h"
 
-MesinEkspresi::MesinEkspresi() {
+EkspresiRepository::EkspresiRepository() {
 	// TODO Auto-generated constructor stub
 
 }
 
-MesinEkspresi::~MesinEkspresi() {
+EkspresiRepository::~EkspresiRepository() {
 	// TODO Auto-generated destructor stub
 }

@@ -1,17 +1,17 @@
 /*
- * MesinEkspresi.cpp
+ * Stack.cpp
  *
  *  Created on: Mar 15, 2015
  *      Author: Aurelia
  */
 
-#include "MesinEkspresi.h"
+#include "Stack.h"
 
-MesinEkspresi::MesinEkspresi() {
+Stack::Stack() {
 	// TODO Auto-generated constructor stub
 
 }
 
-MesinEkspresi::~MesinEkspresi() {
+Stack::~Stack() {
 	// TODO Auto-generated destructor stub
 }
