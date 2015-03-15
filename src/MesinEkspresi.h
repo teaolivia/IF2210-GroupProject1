@@ -7,40 +7,28 @@
 
 #ifndef MESINEKSPRESI_H_
 #define MESINEKSPRESI_H_
-#include <iostream>
-#include <string>
-using namespace std;
 
-template<class T>
-class MesinEkspresi{
+template <class T>
+class MesinEkspresi {
 public:
 	MesinEkspresi();
-	MesinEkspresi(T a,T b);
-	MesinEkspresi(const MesinEkspresi&);
-	~MesinEkspresi();
+	MesinEkspresi(T operand1, T operand2);
+	virtual ~MesinEkspresi();
 
-	void operator=(MesinEkspresi&);
-	void operator+(MesinEkspresi&);
-	void operator-(MesinEkspresi&);
-	void operator*(MesinEkspresi&);
-	void operator/(MesinEkspresi&);
+	//operator aritmatika
+	void operator+(const MesinEkspresi&);
+	void operator-(const MesinEkspresi&);
+	void operator*(const MesinEkspresi&);
+	void operator/(const MesinEkspresi&);
 
-	void operator <(MesinEkspresi&);
-	void operator >(MesinEkspresi&);
-	void operator >=(MesinEkspresi&);
-	void operator <=(MesinEkspresi&);
+	//operator logika
+	void operator=(const MesinEkspresi&);
+	void operator<(const MesinEkspresi&);
+	void operator>(const MesinEkspresi&);
+	void operator>=(const MesinEkspresi&);
+	void operator<=(const MesinEkspresi&);
 
-	void operator and(MesinEkspresi&);
-	void operator or (MesinEkspresi&);
-	void operator not(MesinEkspresi&);
+	//mode prefix infix
+};
 
-	int isEmpty() const;
-	int Push();
-	void Pop(int );
-
-protected:
-	T a;
-	T b;
-	MesinEkspresi *data;
-}
 #endif /* MESINEKSPRESI_H_ */
